@@ -1,0 +1,8 @@
+{
+	"name": "<%= _.slugify(sitename) %>",
+	"version": "1.0.0",
+	"dependencies": {
+		"picturefill": "latest"<% if (jquery) { %>,
+		"jquery": "<% if (!ie8) { %>latest<% } else { %>1.10.*<% } %>"<% } %>
+	}
+}

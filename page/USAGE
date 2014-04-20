@@ -1,0 +1,9 @@
+Description:
+	Creates a new web page
+
+Example:
+	yo snow:page [pagename]
+
+	This will create:
+
+		src/jade/pagename.jade

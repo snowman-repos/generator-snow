@@ -1,0 +1,19 @@
+{
+	"locales": {
+		"en_GB": {
+			"locale": "en_GB",
+			"title": "It's snowing!",
+			"navhome": "Home"
+		},
+		"fr_FR": {
+			"locale": "fr_FR",
+			"title": "Il Neige!",
+			"navhome": "Page d'accueil"
+		},
+		"zh_CN": {
+			"locale": "zh_CN",
+			"title": "下雪啦！",
+			"navhome": "首页"
+		}
+	}
+}

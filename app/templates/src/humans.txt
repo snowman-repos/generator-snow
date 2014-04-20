@@ -1,0 +1,21 @@
+This site was built using the *snow generator* for yeoman.
+https://github.com/darryl-snow/generator-snow
+
+The generator was built by Darryl Snow (http://darrylsnow.com).
+
+/* TEAM */
+
+Title: Your name, job title
+Site: http://yourwebsite.com
+Twitter / Weibo / Wechat: yourname
+Location: your city
+
+/* THANKS */
+
+Darryl Snow
+
+/* SITE */
+Last update: yyyy/mm/dd
+Standards: HTML5, CSS3, ES6
+Components: 
+Software: 

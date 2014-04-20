@@ -1,0 +1,45 @@
+{
+	"name": "<%= _.slugify(sitename) %>",
+	"version": "1.0.0",
+	"author": "",
+	"license": "",
+	"dependencies": {
+		"coffeeify": "latest",
+		"coffee-script": "latest",
+		"connect": "latest",
+		"connect-livereload": "latest",
+		"express": "latest",
+		"ga-browserify": "latest",
+		"gulp": "latest",
+		"gulp-autoprefixer": "latest",
+		"gulp-bower": "latest",
+		"gulp-browserify": "latest",
+		"gulp-clean": "latest",<% if (component) { %>
+		"gulp-concat": "latest",
+		"gulp-exec": "latest",
+		"gulp-filter": "latest",<% } %>
+		"gulp-header": "latest",
+		"gulp-imagemin": "latest",
+		"gulp-jade": "latest",
+		"gulp-jasmine": "latest",
+		"gulp-load-plugins": "latest",
+		"gulp-livereload": "latest",
+		"gulp-minify-css": "latest",
+		"gulp-plumber": "latest",
+		"gulp-rename": "latest",
+		"gulp-replace-task": "latest",
+		"gulp-rev": "latest",
+		"gulp-size": "latest",
+		"gulp-stylestats": "latest",
+		"gulp-stylus": "latest",
+		"gulp-svgmin": "latest",<% if (svgicons) { %>
+		"gulp-svg-sprites": "latest",<% } %>
+		"gulp-uglify": "latest",
+		"gulp-util": "latest",
+		"gulp-watch": "latest",
+		"open": "latest",
+		"path": "latest",
+		"run-sequence": "latest",
+		"tiny-lr": "latest"
+	}
+}

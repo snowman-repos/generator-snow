@@ -1,0 +1,26 @@
+label
+	display 			block
+
+div.has-error
+	color 				red
+
+.loading
+	position 				relative
+	
+	&:before
+		background-color 	rgba(lightest-grey, 0.85)
+		bottom 				0
+		content 			""
+		left 				0
+		position 			absolute
+		right 				0
+		top 				0
+
+	&:after
+		content 			url("../images/ajax-loader.gif")
+		left 				50%
+		margin 				-8px 0 0 -110px
+		position 			absolute
+		text-align 			center
+		top 				50%
+		z-index 			10

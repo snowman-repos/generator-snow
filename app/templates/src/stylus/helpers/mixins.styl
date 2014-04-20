@@ -1,0 +1,64 @@
+// GENERAL
+
+inline-list()
+	li
+		display 				inline-block
+		margin-right 			-4px
+
+unstyled-list()
+	list-style 					none
+	margin 						0
+	padding 					0
+
+	li
+		margin 					0
+		padding 				0
+
+remify(value)
+	u = unit(value);
+
+	if u is "px"
+		return unit(value/16, "rem")
+	else
+		return unit(value, u)
+
+
+// LAYOUT
+
+// clearfix
+group()
+
+	&:after
+		clear					both
+		content					""
+		display					table
+
+
+// TYPOGRAPHY
+
+base-type(w = $font-weight, lh = $line-height, fz = $font-size, ff = $font-family)
+	font 						w unit(fz,'%')/ lh ff;
+
+breakword()
+	word-wrap					break-word
+
+normal-wrap()
+	word-wrap					normal
+
+auto-wrap()
+	word-wrap					auto
+
+indenting()
+	margin 						auto auto $indent-val
+
+	p + p
+		margin-top 				$indent-val
+		text-indent 			$indent-val
+
+type-scale($font-sizes)
+	if $type-scale-unit-value == 'rem'
+		font-size				unit($font-sizes,'px')
+	else
+		font-size				unit($font-sizes/$font-base,'em')
+	$measure =					$font-base * $line-height
+	margin-bottom 				unit($measure/$font-sizes,em)

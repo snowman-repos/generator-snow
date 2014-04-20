@@ -1,0 +1,46 @@
+html,
+body
+	breakword()
+	font-kerning			auto
+	text-rendering			optimizeLegibility
+	font-smooth				always
+	-webkit-font-smoothing	subpixel-antialiased
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	font-weight 			300
+	line-height 			1
+	margin-top 				0
+
+	for size in $font-sizes
+		.{size[0]}
+			type-scale(size[1])
+
+.subheader
+	font-size				0.6em
+
+a
+	color 					blue
+	transition				$fast-transition
+
+	&:active,
+	&:focus,
+	&:hover
+		color 				darken(@color, 20%)
+		text-decoration 	none
+
+p
+	indenting()
+
+abbr
+	cursor 					help
+
+code
+	color 					purple
+
+.small
+	font-size 				0.7em

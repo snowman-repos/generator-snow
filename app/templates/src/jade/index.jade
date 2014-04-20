@@ -1,0 +1,37 @@
+extends templates/master
+
+//- variables like #{variable} come from content.json
+block title
+	| #{title}
+
+block css
+
+block content
+
+<% if (localised) { %>
+	script.
+		window.locale = "#{locale}"
+<% } %>
+
+	.container<% if (localised) { %>(class="#{locale}")<% } %>
+
+		section.hero
+			img(src="<% if (localised) { %>../<% } %>images/logo.png")
+			//- variables like != variable come from content.json
+			h1!= title
+
+			small made with 
+				<% if (!svgicons) { %>i.icon-heart<% } else { %>svg(viewBox="0 0 32 32" class="icon")
+					use(xlink:href="#heart")<% } %>
+				|  in Beijing by 
+				a(href="https://github.com/darryl-snow") Darryl Snow
+
+		//- Responsive images using picturefill
+		//- span(data-picture data-alt="alt text")
+		//- 	span(data-src="large.png")
+		//- 	span(data-src="small.png", data-media="(min-width: 0)")
+		//- 	span(data-src="medium.png", data-media="(min-width: 401px)")
+		//- 	span(data-src="large.png", data-media="(min-width: 801px)")
+
+		//- 	noscript
+		//- 		img(src="large.png", alt="alt text")

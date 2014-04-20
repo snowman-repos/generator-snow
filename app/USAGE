@@ -1,0 +1,74 @@
+Description:
+	Creates a default website
+
+Example:
+	yo snow
+
+	By default, this will create:
+		.bowerrc
+		.coffeelintrc
+		.editorconfig
+		.gitignore
+		bower.json
+		component.json
+		gulpfile.coffee
+		gulpfile.js
+		package.json
+		readme.md
+
+		src/coffee/dependency.coffee
+		src/coffee/main.coffee
+
+		src/fonts/snow.eot
+		src/fonts/snow.svg
+		src/fonts/snow.ttf
+		src/fonts/snow.woff
+
+		src/images/favicons/apple-touch-icon-114x114.png
+		src/images/favicons/apple-touch-icon-120x120.png
+		src/images/favicons/apple-touch-icon-144x144.png
+		src/images/favicons/apple-touch-icon-152x152.png
+		src/images/favicons/apple-touch-icon-57x57.png
+		src/images/favicons/apple-touch-icon-60x60.png
+		src/images/favicons/apple-touch-icon-72x72.png
+		src/images/favicons/apple-touch-icon-76x76.png
+		src/images/favicons/apple-touch-icon-precomposed.png
+		src/images/favicons/apple-touch-icon.png
+		src/images/favicons/favicon-160x160.png
+		src/images/favicons/favicon-16x16.png
+		src/images/favicons/favicon-196x196.png
+		src/images/favicons/favicon-32x32.png
+		src/images/favicons/favicon-96x96.png
+		src/images/favicons/mstile-144x144.png
+		src/images/favicons/mstile-150x150.png
+		src/images/favicons/mstile-310x150.png
+		src/images/favicons/mstile-310x310.png
+		src/images/favicons/mstile-70x70.png
+		src/images/ajax-loader.gif
+		src/logo.png
+
+		src/jade/includes/footer.jade
+		src/jade/includes/header.jade
+		src/jade/templates/master.jade
+		src/jade/index.jade
+
+		src/stylus/base/base.styl
+		src/stylus/base/buttons.styl
+		src/stylus/base/forms.styl
+		src/stylus/base/icons.styl
+		src/stylus/base/images.styl
+		src/stylus/base/inputs.styl
+		src/stylus/base/lists.styl
+		src/stylus/base/selects.styl
+		src/stylus/base/tables.styl
+		src/stylus/base/typography.styl
+		src/stylus/helpers/debug.styl
+		src/stylus/helpers/grid.styl
+		src/stylus/helpers/mixins.styl
+		src/stylus/helpers/normalise.styl
+		src/stylus/helpers/variables.styl
+		src/stylus/modules/hero.styl
+		src/stylus/modules/navbar.styl
+		src/stylus/main.styl
+
+		src/test/spec.coffee

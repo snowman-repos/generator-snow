@@ -1,0 +1,73 @@
+button,
+.button
+	background-color		grey
+	border					none
+	color 					white
+	cursor					pointer
+	display					inline-block
+	font					inherit
+	margin					0
+	overflow				visible
+	padding					0.3em 0.5em
+	text-align				center
+	transition				$fast-transition
+	vertical-align			middle
+
+	&:hover,
+	&:active,
+	&:focus,
+	&:visited
+		background-color 	darken(@background-color, 20%)
+		color				white
+		text-decoration		none
+		transition			$fast-transition
+
+.button-small
+	font-size 				0.8em
+
+.button-large
+	font-size 				1.2em
+
+.button-full
+	padding-left			0
+	padding-right			0
+	width 					100%
+
+.button-rounded
+	border-radius			3px
+
+.button--success
+	background-color 		turquoise
+
+	&:hover,
+	&:active,
+	&:focus,
+	&:visited
+		background-color 	darken(@background-color, 20%)
+
+.button--warning
+	background-color 		yellow
+
+	&:hover,
+	&:active,
+	&:focus,
+	&:visited
+		background-color 	darken(@background-color, 20%)
+
+.button--info
+	background-color 		blue
+
+	&:hover,
+	&:active,
+	&:focus,
+	&:visited
+		background-color 	darken(@background-color, 20%)
+
+.button--error
+	background-color 		red
+
+	&:hover,
+	&:active,
+	&:focus,
+	&:visited
+		background-color 	darken(@background-color, 20%)

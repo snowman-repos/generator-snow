@@ -1,0 +1,14 @@
+// Fluid images for responsive purposes, and offset `alt` text from surrounding copy
+img
+	height 				auto
+	font-style			italic
+	max-width			100%
+
+.img--rounded
+	border-radius		999px
+
+// If a `width` and/or `height` attribute have been explicitly defined, let’s
+// not make the image fluid.
+img[width],
+img[height]
+	max-width 			none
