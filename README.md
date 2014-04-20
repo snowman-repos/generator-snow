@@ -33,10 +33,10 @@ Yeoman is a scaffolding application that helps you set up projects so you can ge
 * [NodeJS](https://nodejs.org)
 * [NPM](https://npmjs.org)
 * [GulpJS](http://gulpjs.com)
-* Yeoman:
+* [Yeoman](http://yeoman.io/):
 
 ```
-$ npm install -g yo
+$ sudo npm install -g yo
 ```
 
 ### Get Started
@@ -44,13 +44,14 @@ $ npm install -g yo
 To install generator-snow from npm, run:
 
 ```
-$ npm install -g generator-snow
+$ sudo npm install -g generator-snow
 ```
 
 Then create a new project directory and then initiate the generator:
 
 ```
-$ yo snow
+$ mkdir <project> && cd $_
+$ yo snow <project>
 ```
 
 ### Sub-generators
