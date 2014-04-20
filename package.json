@@ -1,7 +1,7 @@
 {
   "name": "generator-snow",
   "version": "1.0.0",
-  "description": "Yeoman generator",
+  "description": "A yeoman generator for setting up new front-end projects that use Jade, Stylus, and CoffeeScript, using GulpJS, Browserify, and Jasmine. Also support for localised content, components, SVG icons or icon fonts, and responsive images using picturefill.",
   "license": "MIT",
   "main": "app/index.js",
   "repository": "darryl-snow/generator-snow",
@@ -20,7 +20,7 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator, Jade, Stylus, CoffeeScript, Gulp, GulpJS, Browserify, Jasmine, Component, Localization, SVG, Responsive"
   ],
   "dependencies": {
     "yeoman-generator": "~0.16.0",
