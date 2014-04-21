@@ -26,7 +26,6 @@ Yeoman is a scaffolding application that helps you set up projects so you can ge
 * Jade, Stylus, and CoffeeScript front-end stack
 * Gulp configuration to compile and optimise templates, styles, scripts, and images, as well as run a development server with livereload (won't work with a VPN on)
 * Localised content generated from a single JSON file
-* Fabfile for handling deployment
 
 ### Prerequisites
 

@@ -103,7 +103,6 @@ var SnowGenerator = yeoman.generators.Base.extend({
 		// base files
 		this.copy("bowerrc", ".bowerrc");
 		this.copy("editorconfig", ".editorconfig");
-		this.template("fabfile.py", "fabfile.py");
 		this.copy("gitignore", ".gitignore");
 		this.template("gulpfile.coffee", "gulpfile.coffee");
 		this.copy("gulpfile.js", "gulpfile.js");
