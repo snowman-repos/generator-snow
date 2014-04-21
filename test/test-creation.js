@@ -25,7 +25,6 @@ describe("snow generator", function () {
 			"bower.json",
 			".bowerrc",
 			".editorconfig",
-			"fabfile.py",
 			".gitignore",
 			"gulpfile.coffee",
 			"gulpfile.js",
