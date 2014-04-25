@@ -31,6 +31,8 @@ describe("snow generator", function () {
 			".coffeelintrc",
 			"package.json",
 			"readme.md",
+			"favicon.ico",
+			"browserconfig.xml",
 			"src/content.json",
 			"src/jade/index.jade",
 			"src/jade/templates/master.jade",

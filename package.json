@@ -1,6 +1,6 @@
 {
   "name": "generator-snow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A yeoman generator for setting up new front-end projects that use Jade, Stylus, and CoffeeScript, using GulpJS, Browserify, and Jasmine. Also support for localised content, components, SVG icons or icon fonts, and responsive images using picturefill.",
   "license": "MIT",
   "main": "app/index.js",

@@ -276,7 +276,7 @@ gulp.task "images", ->
 			showFiles: true
 		.pipe gulp.dest Config.dist + "/images"
 
-	gulp.src Config.src + "/images/**/*.svg", read: false
+	gulp.src Config.src + "/images/**/*.svg"
 		.pipe $.plumber()
 		.pipe $.svgmin()
 		.pipe $.size
@@ -397,7 +397,7 @@ gulp.task "watch", ->
 	gulp.watch Config.src + "/jade/**/*.jade", ["jade"]
 	gulp.watch Config.src + "/stylus/**/*.styl", ["stylus"]
 	gulp.watch Config.src + "/coffee/**/*.coffee", ["coffeescript", "test"]
-	gulp.watch Config.src + "/images/**/*.{png,jpg,gif,svg}", ["images"]
+	gulp.watch Config.src + "/images/!(favicons)/*.{png,jpg,gif,svg}", ["images"]
 	gulp.watch Config.src + "/lib/**/*.js", ["javascript"]
 	gulp.watch Config.src + "/content.json", ["jade"]
 	gulp.watch Config.src + "/*.{xml,ico,txt,php}", ["otherstuff"]<% if (!svgicons) { %>
