@@ -108,8 +108,8 @@ var SnowGenerator = yeoman.generators.Base.extend({
 		this.copy("gulpfile.js", "gulpfile.js");
 		this.copy("coffeelintrc", ".coffeelintrc");
 		this.copy("readme.md", "readme.md");
-		this.copy("favicon.ico", "favicon.ico");
-		this.copy("browserconfig.xml", "browserconfig.xml");
+		this.copy("src/favicon.ico", "src/favicon.ico");
+		this.copy("src/browserconfig.xml", "src/browserconfig.xml");
 		if (this.localised) {
 			this.template("src/content-localised.json", "src/content.json");
 		} else {
