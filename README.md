@@ -1,5 +1,7 @@
 # generator-snow [![Build Status](https://secure.travis-ci.org/darryl-snow/generator-snow.png?branch=master)](https://travis-ci.org/darryl-snow/generator-snow)
 
+![](https://cloud.githubusercontent.com/assets/2296711/2811269/8e045026-ce11-11e3-90de-6c8ed5523fe6.png)
+
 ## Features:
 * Jade/Stylus/CoffeeScript stack
 * Localisation based on content from a single config file
