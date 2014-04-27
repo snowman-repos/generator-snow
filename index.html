@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Generator-snow by darryl-snow</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/darryl-snow/generator-snow">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/darryl-snow/generator-snow/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/darryl-snow/generator-snow/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Generator-snow</h1>
+          <p>A yeoman generator for setting up new front-end projects that use Jade, Stylus, and CoffeeScript, using GulpJS, Browserify, and Jasmine. Also support for localised content, SVG icons or icon fonts, and responsive images using picturefill.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/darryl-snow">darryl-snow</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="generator-snow-" class="anchor" href="#generator-snow-"><span class="octicon octicon-link"></span></a>generator-snow <a href="https://travis-ci.org/darryl-snow/generator-snow"><img src="https://secure.travis-ci.org/darryl-snow/generator-snow.png?branch=master" alt="Build Status"></a>
+</h1>
+
+<h2>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features:</h2>
+
+<ul>
+<li>Jade/Stylus/CoffeeScript stack</li>
+<li>Localisation based on content from a single config file</li>
+<li>Minimal CSS boilerplate framework</li>
+<li>CoffeeScript with browserify (require "dependency")</li>
+<li>Remove unused CSS</li>
+<li>Unit tests with Jasmine/Karma/PhantomJS</li>
+<li>Automatically includes jQuery (latest, or otherwise 1.10.* if IE8 support is * required) and HTML5 shim if required</li>
+<li>Component integration</li>
+<li>Other front-end dependencies managed with Bower</li>
+<li>All the config files you need</li>
+<li>Support for icon fonts and SVG icon sprites</li>
+<li>Responsive images using picturefill</li>
+<li>Image optimisation</li>
+<li>Full set of fav/app/touch icons</li>
+<li>Automating cache-busting for CSS and JS</li>
+<li>Fully automated watch &amp; build system using GulpJS</li>
+<li>A handsome logo</li>
+</ul><h2>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting Started</h2>
+
+<p>Yeoman is a scaffolding application that helps you set up projects so you can get straight into the coding. <strong>Snow</strong> is a generator that scaffolds out a starter template with:</p>
+
+<ul>
+<li>Jade, Stylus, and CoffeeScript front-end stack</li>
+<li>Gulp configuration to compile and optimise templates, styles, scripts, and images, as well as run a development server with livereload (won't work with a VPN on)</li>
+<li>Localised content generated from a single JSON file</li>
+</ul><h3>
+<a name="prerequisites" class="anchor" href="#prerequisites"><span class="octicon octicon-link"></span></a>Prerequisites</h3>
+
+<ul>
+<li><a href="https://nodejs.org">NodeJS</a></li>
+<li><a href="https://npmjs.org">NPM</a></li>
+<li><a href="http://gulpjs.com">GulpJS</a></li>
+<li>
+<a href="http://yeoman.io/">Yeoman</a>:</li>
+</ul><pre><code>$ sudo npm install -g yo
+</code></pre>
+
+<h3>
+<a name="get-started" class="anchor" href="#get-started"><span class="octicon octicon-link"></span></a>Get Started</h3>
+
+<p>To install generator-snow from npm, run:</p>
+
+<pre><code>$ sudo npm install -g generator-snow
+</code></pre>
+
+<p>Then create a new project directory and then initiate the generator:</p>
+
+<pre><code>$ mkdir &lt;project&gt; &amp;&amp; cd $_
+$ yo snow &lt;project&gt;
+</code></pre>
+
+<h3>
+<a name="sub-generators" class="anchor" href="#sub-generators"><span class="octicon octicon-link"></span></a>Sub-generators</h3>
+
+<p>To create a new page:</p>
+
+<pre><code>yo snow:page [pagename]
+</code></pre>
+
+<h3>
+<a name="using-the-generated-project" class="anchor" href="#using-the-generated-project"><span class="octicon octicon-link"></span></a>Using the generated project</h3>
+
+<p>To install Bower and Component dependencies:</p>
+
+<pre><code>gulp install
+</code></pre>
+
+<p>During development (compile, watch for changes, run a server):</p>
+
+<pre><code>gulp
+</code></pre>
+
+<p>For deployment (will package and optimise everything):</p>
+
+<pre><code>gulp deploy
+</code></pre>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>MIT</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
