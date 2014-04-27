@@ -5,7 +5,8 @@
 * Localisation based on content from a single config file
 * Minimal CSS boilerplate framework
 * CoffeeScript with browserify (require "dependency")
-* Unit tests with Jasmine
+* Remove unused CSS
+* Unit tests with Jasmine/Karma/PhantomJS
 * Automatically includes jQuery (latest, or otherwise 1.10.* if IE8 support is * required) and HTML5 shim if required
 * Component integration
 * Other front-end dependencies managed with Bower

@@ -1,9 +1,26 @@
 // GENERAL
 
+disabled()
+	opacity 					0.5
+	pointer-events 				none
+
+image-replacement()
+	overflow					hidden
+	text-indent					100%
+	white-space					nowrap
+
 inline-list()
 	li
 		display 				inline-block
 		margin-right 			-4px
+
+remify(value)
+	u = unit(value);
+
+	if u is "px"
+		return unit(value/16, "rem")
+	else
+		return unit(value, u)
 
 unstyled-list()
 	list-style 					none
@@ -14,13 +31,15 @@ unstyled-list()
 		margin 					0
 		padding 				0
 
-remify(value)
-	u = unit(value);
-
-	if u is "px"
-		return unit(value/16, "rem")
-	else
-		return unit(value, u)
+visuallyhidden()
+	border						0
+	clip						rect(0 0 0 0)
+	height						1px // Setting this to 0 make it invisible for VoiceOver
+	margin						-1px
+	overflow					hidden
+	padding						0
+	position					absolute
+	width						1px // Setting this to 0 make it invisible for VoiceOver
 
 
 // LAYOUT
@@ -33,20 +52,47 @@ group()
 		content					""
 		display					table
 
+placement(type, top, right, bottom, left)
+	bottom						bottom
+	left						left
+	position					type
+	right						right
+	top							top
+
+transform(string)
+	transform					string
+
+rotate(deg)
+	transform					rotate(deg)
+
+scale(factor)
+	transform					scale(factor)
+
+translate (x, y)
+	transform					translate(x, y)
+
+transition(string = $fast-transition)
+	transition					string
+
 
 // TYPOGRAPHY
+
+auto-wrap()
+	word-wrap					auto
 
 base-type(w = $font-weight, lh = $line-height, fz = $font-size, ff = $font-family)
 	font 						w unit(fz,'%')/ lh ff
 
 breakword()
+	hyphens						auto
+	word-break					break-all
+	word-break					break-word
 	word-wrap					break-word
 
-normal-wrap()
-	word-wrap					normal
-
-auto-wrap()
-	word-wrap					auto
+ellipsis()
+	overflow					hidden
+	text-overflow				ellipsis
+	white-space 				nowrap
 
 indenting()
 	margin 						auto auto $indent-val
@@ -55,10 +101,13 @@ indenting()
 		margin-top 				$indent-val
 		text-indent 			$indent-val
 
-type-scale($font-sizes)
+normal-wrap()
+	word-wrap					normal
+
+type-scale(font-sizes)
 	if $type-scale-unit-value == 'rem'
-		font-size				unit($font-sizes,'px')
+		font-size				unit(font-sizes,'px')
 	else
-		font-size				unit($font-sizes/$font-base,'em')
+		font-size				unit(font-sizes/$font-base,'em')
 	$measure =					$font-base * $line-height
-	margin-bottom 				unit($measure/$font-sizes,em)
+	margin-bottom 				unit($measure/font-sizes,em)

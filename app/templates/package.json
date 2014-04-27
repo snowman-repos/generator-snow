@@ -3,25 +3,23 @@
 	"version": "1.0.0",
 	"author": "",
 	"license": "",
-	"dependencies": {
+	"devDependencies": {
 		"coffeeify": "latest",
 		"coffee-script": "latest",
 		"connect": "latest",
 		"connect-livereload": "latest",
 		"express": "latest",
-		"ga-browserify": "latest",
 		"gulp": "latest",
 		"gulp-autoprefixer": "latest",
 		"gulp-bower": "latest",
 		"gulp-browserify": "latest",
 		"gulp-clean": "latest",<% if (component) { %>
-		"gulp-concat": "latest",
-		"gulp-exec": "latest",
+		"gulp-concat": "latest",<% } %>
+		"gulp-exec": "latest",<% if (component) { %>
 		"gulp-filter": "latest",<% } %>
 		"gulp-header": "latest",
 		"gulp-imagemin": "latest",
 		"gulp-jade": "latest",
-		"gulp-jasmine": "latest",
 		"gulp-load-plugins": "latest",
 		"gulp-livereload": "latest",
 		"gulp-minify-css": "latest",
@@ -37,6 +35,11 @@
 		"gulp-uglify": "latest",
 		"gulp-util": "latest",
 		"gulp-watch": "latest",
+		"karma": "latest",
+		"karma-browserify": "latest",
+		"karma-coffee-preprocessor": "latest",
+		"karma-jasmine": "latest",
+		"karma-phantomjs-launcher": "latest",
 		"open": "latest",
 		"path": "latest",
 		"run-sequence": "latest",

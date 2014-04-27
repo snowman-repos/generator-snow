@@ -5,7 +5,6 @@ var path = require("path");
 var yeoman = require("yeoman-generator");
 var chalk = require("chalk");
 
-
 var SnowGenerator = yeoman.generators.Base.extend({
 	init: function () {
 		this.pkg = require("../package.json");
@@ -107,6 +106,7 @@ var SnowGenerator = yeoman.generators.Base.extend({
 		this.template("gulpfile.coffee", "gulpfile.coffee");
 		this.copy("gulpfile.js", "gulpfile.js");
 		this.copy("coffeelintrc", ".coffeelintrc");
+		this.template("karma.conf.coffee", ".karma.conf.coffee");
 		this.copy("readme.md", "readme.md");
 		this.copy("src/favicon.ico", "src/favicon.ico");
 		this.copy("src/browserconfig.xml", "src/browserconfig.xml");
@@ -138,6 +138,7 @@ var SnowGenerator = yeoman.generators.Base.extend({
 		this.copy("src/stylus/helpers/grid.styl", "src/stylus/helpers/grid.styl");
 		this.copy("src/stylus/helpers/mixins.styl", "src/stylus/helpers/mixins.styl");
 		this.copy("src/stylus/helpers/normalise.styl", "src/stylus/helpers/normalise.styl");
+		this.copy("src/stylus/helpers/print.styl", "src/stylus/helpers/print.styl");
 		this.copy("src/stylus/helpers/variables.styl", "src/stylus/helpers/variables.styl");
 		this.copy("src/stylus/modules/navbar.styl", "src/stylus/modules/navbar.styl");
 		this.copy("src/stylus/modules/hero.styl", "src/stylus/modules/hero.styl");

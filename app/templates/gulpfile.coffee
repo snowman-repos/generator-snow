@@ -209,7 +209,7 @@ gulp.task "coffeescript", ->
 						path: Config.dist + "/scripts/lib/picturefill/picturefill.js"
 						exports: "picturefill"<% if (jquery) { %>
 					jquery:
-						path: Config.src + "/lib/jquery/dist/jquery.min.js"
+						path: Config.src + "/lib/jquery<% if (!ie8) { %>/dist<% } %>/jquery.min.js"
 						exports: "jquery"<% } %><% if (component) { %>
 			.pipe jsfilter.restore()
 			.pipe $.concat "main.js"<% } %>
@@ -233,7 +233,7 @@ gulp.task "coffeescript", ->
 						path: Config.dist + "/scripts/lib/picturefill/picturefill.js"
 						exports: "picturefill"<% if (jquery) { %>
 					jquery:
-						path: Config.dist + "/scripts/lib/jquery/dist/jquery.min.js"
+						path: Config.dist + "/scripts/lib/jquery<% if (!ie8) { %>/dist<% } %>/jquery.min.js"
 						exports: "jquery"<% } %><% if (component) { %>
 			.pipe jsfilter.restore()
 			.pipe $.concat "main.js"<% } else { %>
@@ -397,6 +397,7 @@ gulp.task "watch", ->
 	gulp.watch Config.src + "/jade/**/*.jade", ["jade"]
 	gulp.watch Config.src + "/stylus/**/*.styl", ["stylus"]
 	gulp.watch Config.src + "/coffee/**/*.coffee", ["coffeescript", "test"]
+	gulp.watch Config.src + "/test/**/*.coffee", ["test"]
 	gulp.watch Config.src + "/images/!(favicons)/*.{png,jpg,gif,svg}", ["images"]
 	gulp.watch Config.src + "/lib/**/*.js", ["javascript"]
 	gulp.watch Config.src + "/content.json", ["jade"]
@@ -425,10 +426,11 @@ gulp.task "server", ->
 # Run unit tests
 
 gulp.task "test", ->
-	gulp.src Config.src + "/test/spec.coffee"
-		.pipe $.jasmine
-			options:
-				specs: [Config.src + "/coffee/main.coffee"]
+	options =
+		silent: false
+		continueOnError: true
+	gulp.src "karma.conf.coffee"
+		.pipe $.exec "./node_modules/karma/bin/karma start", options
 
 notifyLivereload = (event) ->
 
